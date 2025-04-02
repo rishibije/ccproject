@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Inventory Management</h1>
+        
+        <div class="controls">
+            <button id="loadProducts">Refresh Products</button>
+            <div class="add-product">
+                <input type="text" id="productName" placeholder="Product name">
+                <input type="number" id="productPrice" placeholder="Price">
+                <button id="addProduct">Add Product</button>
+            </div>
+        </div>
+
+        <div id="loading">Loading...</div>
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
